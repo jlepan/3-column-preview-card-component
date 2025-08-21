@@ -1,6 +1,6 @@
-@import url("/css/reset.css");
-@import url("/css/variables.css");
-@import url("/css/component/card-car.css");
+@import url("reset.css");
+@import url("variables.css");
+@import url("component/card-car.css");
 
 body {
     position: relative;
