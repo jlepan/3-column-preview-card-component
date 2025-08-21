@@ -1,0 +1,63 @@
+.card-car {
+    width: 100%;
+    max-width: 330px;
+
+    margin-inline: auto;
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px
+}
+
+.card-car img {
+    width: 70px;
+    height: 40px
+}
+
+.card-car .title {
+    color: var(--titleColor);
+    font-family: var(--titleFontFamily);
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.card-car .paragraph {
+    line-height: 1.6;
+    color: var(--paragraphColor)
+}
+
+.card-car button {
+    width: auto;
+    padding: 0.8em 1.5em;
+    border-radius: 30px;
+    border: solid 2px var(--baseColor);
+
+    cursor: pointer;
+
+    font-weight: 500;
+    font-size: 1rem;
+
+    transition: background-color 0.3s ease-in, color 0.3s ease-in, border 0.3s ease-in;
+}
+
+.card-car button:hover, .card-car button:focus {
+    outline: none;
+    background-color: transparent;
+
+    color: var(--baseColor)!important;
+}
+
+@media only screen and (min-width: 781px) {
+    .card-car {
+        max-width: 345px;
+        aspect-ratio: 9 / 14;
+    }
+
+    .card-car button {
+        margin-top: auto;
+    }
+}

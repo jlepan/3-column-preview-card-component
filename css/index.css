@@ -1,0 +1,109 @@
+@import url("/css/reset.css");
+@import url("/css/variables.css");
+@import url("/css/component/card-car.css");
+
+body {
+    position: relative;
+    min-height: 100vh;
+
+    background-color: var(--baseColor);
+
+    padding-block: 60px;
+
+    color: var(--paragraphColor);
+    font-size: var(--baseFontSize);
+    font-family: var(--baseFontFamily);
+    font-weight: var(--baseFontWeight);
+}
+
+.flex-card {
+    margin-inline: auto;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    border-radius: 10px;
+}
+
+.card-car button {
+    font-family: var(--baseFontFamily);
+    background-color: var(--baseColor);
+}
+
+.card-car.sedans {
+    background-color: var(--goldColor);
+
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.card-car.sedans button {
+    color: var(--goldColor);
+}
+
+.card-car.suvs {
+    background-color: var(--cyanColor);
+}
+.card-car.suvs button {
+    color: var(--cyanColor);
+}
+
+.card-car.luxury {
+    background-color: var(--greenColor);
+
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.card-car.luxury button {
+    color: var(--greenColor);
+}
+
+footer {
+    width: 100%;
+
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+
+    text-align: center;
+    color: var(--cyanColor)
+}
+
+footer a {
+    color: var(--goldColor);
+
+    transition: color 0.3s ease-in;
+}
+
+footer a:hover, footer a:focus {
+    outline: none;
+    color: var(--greenColor)
+}
+
+@media only screen and (min-width: 781px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex-card {
+        flex-direction: row;
+
+        width: 90%;
+    }
+
+    .card-car.sedans {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+    .card-car.luxury {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+    }
+
+    footer {
+        bottom: 20px;
+    }
+}

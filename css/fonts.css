@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Lexend Deca";
+    src: url("/fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Big Shoulders";
+    src: url("/fonts/Big_Shoulders/BigShoulders-VariableFont_opsz\,wght.ttf") format("truetype");
+}

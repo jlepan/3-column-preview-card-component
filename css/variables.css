@@ -1,0 +1,16 @@
+@import url("/css/fonts.css");
+
+:root {
+    --goldColor: hsl(31, 77%, 52%);
+    --cyanColor: hsl(184, 100%, 22%);
+    --greenColor: hsl(179, 100%, 13%);
+    --paragraphColor: hsla(0, 0%, 100%, 0.75);
+    --titleColor: hsl(0, 0%, 95%);
+    --baseColor: hsl(0, 0%, 95%);
+
+    --baseFontSize: 15px;
+    --baseFontFamily: "Lexend Deca", Arial, Helvetica, sans-serif;
+    --titleFontFamily: "Big Shoulders", Arial, Helvetica, sans-serif;
+    --baseFontWeight: 400;
+    --strongFontWeight: 700;
+}
